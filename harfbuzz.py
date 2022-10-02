@@ -4047,7 +4047,7 @@ class Face :
             hb.hb_ot_layout_table_get_lookup_count(self._hbobj, table_tag)
     #end ot_layout_table_get_lookup_count
 
-    def ot_layout_collect_features(self, table_tag, scripts = None, languges = None, features = None) :
+    def ot_layout_collect_features(self, table_tag, scripts = None, languages = None, features = None) :
         if scripts != None :
             c_scripts = seq_to_ct(scripts, HB.tag_t, zeroterm = True)
         else :
